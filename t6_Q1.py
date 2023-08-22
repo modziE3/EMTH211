@@ -17,7 +17,7 @@ def repeated_mult (A_matrix, x0_vec, iteration_num):
     return np.array(ini_matrixlist)
 
 if __name__ == '__main__':
-    A = np.array([[2.,0.],[0.,1.]])
-    x0 = np.array([1.,1.])
-    n=8
-    print(repeated_mult(A, x0, n))
+    A = np.array([[0.95,0.10],[0.05,0.90]])
+    x0 = np.array([900.,300.])
+    n=52
+    print(repeated_mult(A, x0, n)[12])
